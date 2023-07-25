@@ -1,0 +1,15 @@
+@font-face {
+  font-family: "Avenir";
+  src: url(../../assets/fonts/AvenirNextLTPro-Regular.otf) format(opentype), url(../../assets/fonts/AvenirNextLTPro.ttf) format(opentype);
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Avenir";
+  src: url(../../assets/fonts/AvenirNextLTPro-Bold.otf) format(opentype), url(../../assets/fonts/AvenirNextLTProBold.ttf) format(opentype);
+  font-weight: 700;
+}
+.hero__video {
+  width: 100vw;
+  height: 81vw;
+  margin-top: 1rem;
+}/*# sourceMappingURL=Hero.css.map */
