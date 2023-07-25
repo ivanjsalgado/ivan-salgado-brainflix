@@ -58,7 +58,6 @@
   &__form {
     display: flex;
     flex-direction: column;
-    height: 11.25vw;
 
     @include tablet {
       flex-direction: row;
