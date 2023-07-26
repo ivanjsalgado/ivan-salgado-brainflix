@@ -8,8 +8,24 @@
   src: url(../../assets/fonts/AvenirNextLTPro-Bold.otf) format(opentype), url(../../assets/fonts/AvenirNextLTProBold.ttf) format(opentype);
   font-weight: 700;
 }
+.hero {
+  display: flex;
+  background-color: #000000;
+  justify-content: center;
+}
 .hero__video {
   width: 100vw;
-  height: 81vw;
-  margin-top: 1rem;
+  height: 56.25vw;
+}
+@media screen and (min-width: 768px) {
+  .hero__video {
+    height: 50.625vw;
+    width: 90vw;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .hero__video {
+    width: 65vw;
+    height: unset;
+  }
 }/*# sourceMappingURL=Hero.css.map */

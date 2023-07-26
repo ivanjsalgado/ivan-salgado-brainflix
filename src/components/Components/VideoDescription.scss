@@ -1,0 +1,171 @@
+@use "../../styles/partials/colors" as *;
+@use "../../styles/partials/typography" as *;
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
+
+.description {
+  padding: 1.5rem 1rem 0 1rem;
+
+  @include tablet {
+    padding: 1.5rem 2.25rem 0 2.25rem;
+  }
+
+  @include desktop {
+    padding-left: 8.5rem;
+  }
+
+  &__header {
+    @include mobile-page-header;
+    padding-bottom: 1rem;
+
+    @include tablet {
+      @include desktop-tablet-page-header;
+      padding-bottom: 1.5rem;
+    }
+  }
+
+  &__stats {
+    display: flex;
+    border-bottom: 1px solid $mercury;
+    border-top: 1px solid $mercury;
+
+    @include tablet {
+      border-top: none;
+      justify-content: space-between;
+    }
+  }
+
+  &__creator-date {
+    padding-top: 1rem;
+    margin-right: 5rem;
+
+    @include tablet {
+      display: flex;
+      padding-top: 0;
+    }
+  }
+
+  &__creator {
+    @include mobile-sub-section-body;
+    padding-bottom: 1rem;
+    font-weight: 600;
+
+    @include tablet {
+      @include desktop-tablet-subheader-body;
+      padding-right: 1.5rem;
+    }
+  }
+
+  &__date {
+    @include mobile-sub-section-body;
+    color: $silver;
+
+    @include tablet {
+      @include desktop-tablet-subheader-body;
+    }
+  }
+
+  &__container {
+    display: flex;
+  }
+
+  &__icons {
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
+
+    @include tablet {
+      flex-direction: row;
+      padding-top: 0;
+    }
+  }
+
+  &__view-icon {
+    margin-bottom: 1rem;
+    margin-right: 0.5rem;
+    height: 1.125rem;
+    width: 1.125rem;
+
+    @include tablet {
+      height: 1.375rem;
+      width: 1.375rem;
+    }
+  }
+
+  &__view-tablet {
+    display: none;
+
+    @include tablet {
+      display: flex;
+      margin-bottom: 1rem;
+      margin-right: 0.5rem;
+      @include desktop-tablet-subheader-body;
+      color: $silver;
+    }
+  }
+
+  &__like-icon {
+    margin-bottom: 1rem;
+    margin-right: 0.5rem;
+    height: 1.125rem;
+    width: 1.125rem;
+
+    @include tablet {
+      display: none;
+    }
+  }
+
+  &__view-like {
+    padding-top: 1rem;
+
+    @include tablet {
+      display: flex;
+      margin-left: 1.5rem;
+      padding-top: 0;
+    }
+  }
+
+  &__view {
+    @include mobile-sub-section-body;
+    padding-bottom: 1rem;
+    color: $silver;
+
+    @include tablet {
+      display: none;
+    }
+  }
+  &__like-icon-tablet {
+    display: none;
+
+    @include tablet {
+      display: block;
+      margin-bottom: 1rem;
+      margin-right: 0.5rem;
+      height: 1.375rem;
+      width: 1.375rem;
+    }
+  }
+  &__like {
+    @include mobile-sub-section-body;
+    padding-bottom: 1rem;
+    color: $silver;
+
+    @include tablet {
+      @include desktop-tablet-subheader-body;
+    }
+  }
+
+  &__text-container {
+    padding-top: 1rem;
+  }
+
+  &__text {
+    font-size: 0.8025rem;
+    line-height: 1.125rem;
+
+    @include tablet {
+      @include desktop-tablet-subheader-body;
+      padding-right: 1.25rem;
+    }
+  }
+}

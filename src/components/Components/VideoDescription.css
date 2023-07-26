@@ -1,0 +1,189 @@
+@font-face {
+  font-family: "Avenir";
+  src: url(../../assets/fonts/AvenirNextLTPro-Regular.otf) format(opentype), url(../../assets/fonts/AvenirNextLTPro.ttf) format(opentype);
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Avenir";
+  src: url(../../assets/fonts/AvenirNextLTPro-Bold.otf) format(opentype), url(../../assets/fonts/AvenirNextLTProBold.ttf) format(opentype);
+  font-weight: 700;
+}
+.description {
+  padding: 1.5rem 1rem 0 1rem;
+}
+@media screen and (min-width: 768px) {
+  .description {
+    padding: 1.5rem 2.25rem 0 2.25rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .description {
+    padding-left: 8.5rem;
+  }
+}
+.description__header {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  padding-bottom: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .description__header {
+    font-size: 2.0625rem;
+    line-height: 2.75rem;
+    padding-bottom: 1.5rem;
+  }
+}
+.description__stats {
+  display: flex;
+  border-bottom: 1px solid #e1e1e1;
+  border-top: 1px solid #e1e1e1;
+}
+@media screen and (min-width: 768px) {
+  .description__stats {
+    border-top: none;
+    justify-content: space-between;
+  }
+}
+.description__creator-date {
+  padding-top: 1rem;
+  margin-right: 5rem;
+}
+@media screen and (min-width: 768px) {
+  .description__creator-date {
+    display: flex;
+    padding-top: 0;
+  }
+}
+.description__creator {
+  font-size: 0.8125rem;
+  line-height: 1.125rem;
+  padding-bottom: 1rem;
+  font-weight: 600;
+}
+@media screen and (min-width: 768px) {
+  .description__creator {
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+    padding-right: 1.5rem;
+  }
+}
+.description__date {
+  font-size: 0.8125rem;
+  line-height: 1.125rem;
+  color: #afafaf;
+}
+@media screen and (min-width: 768px) {
+  .description__date {
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+  }
+}
+.description__container {
+  display: flex;
+}
+.description__icons {
+  display: flex;
+  flex-direction: column;
+  padding-top: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .description__icons {
+    flex-direction: row;
+    padding-top: 0;
+  }
+}
+.description__view-icon {
+  margin-bottom: 1rem;
+  margin-right: 0.5rem;
+  height: 1.125rem;
+  width: 1.125rem;
+}
+@media screen and (min-width: 768px) {
+  .description__view-icon {
+    height: 1.375rem;
+    width: 1.375rem;
+  }
+}
+.description__view-tablet {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .description__view-tablet {
+    display: flex;
+    margin-bottom: 1rem;
+    margin-right: 0.5rem;
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+    color: #afafaf;
+  }
+}
+.description__like-icon {
+  margin-bottom: 1rem;
+  margin-right: 0.5rem;
+  height: 1.125rem;
+  width: 1.125rem;
+}
+@media screen and (min-width: 768px) {
+  .description__like-icon {
+    display: none;
+  }
+}
+.description__view-like {
+  padding-top: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .description__view-like {
+    display: flex;
+    margin-left: 1.5rem;
+    padding-top: 0;
+  }
+}
+.description__view {
+  font-size: 0.8125rem;
+  line-height: 1.125rem;
+  padding-bottom: 1rem;
+  color: #afafaf;
+}
+@media screen and (min-width: 768px) {
+  .description__view {
+    display: none;
+  }
+}
+.description__like-icon-tablet {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .description__like-icon-tablet {
+    display: block;
+    margin-bottom: 1rem;
+    margin-right: 0.5rem;
+    height: 1.375rem;
+    width: 1.375rem;
+  }
+}
+.description__like {
+  font-size: 0.8125rem;
+  line-height: 1.125rem;
+  padding-bottom: 1rem;
+  color: #afafaf;
+}
+@media screen and (min-width: 768px) {
+  .description__like {
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+  }
+}
+.description__text-container {
+  padding-top: 1rem;
+}
+.description__text {
+  font-size: 0.8025rem;
+  line-height: 1.125rem;
+}
+@media screen and (min-width: 768px) {
+  .description__text {
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+    padding-right: 1.25rem;
+  }
+}/*# sourceMappingURL=VideoDescription.css.map */
