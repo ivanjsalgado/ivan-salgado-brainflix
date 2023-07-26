@@ -7,18 +7,19 @@
   display: flex;
   background-color: $brainflix-dark-black;
   justify-content: center;
+
   &__video {
     width: 100vw;
-    height: 56vw;
+    height: 56.25vw;
 
     @include tablet {
+      height: 50.625vw;
       width: 90vw;
-      height: 50vw;
     }
 
     @include desktop {
       width: 65vw;
-      height: 36vw;
+      height: unset;
     }
   }
 }
