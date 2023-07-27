@@ -8,17 +8,24 @@
   src: url(../../assets/fonts/AvenirNextLTPro-Bold.otf) format(opentype), url(../../assets/fonts/AvenirNextLTProBold.ttf) format(opentype);
   font-weight: 700;
 }
-.list {
-  padding: 0rem 1rem 1rem 1rem;
+.videos {
+  padding-left: 1rem;
 }
 @media screen and (min-width: 768px) {
-  .list {
-    padding: 0 2.25rem;
+  .videos {
+    padding-left: 2.25rem;
+    padding-top: 1.5rem;
   }
 }
 @media screen and (min-width: 1280px) {
-  .list {
-    padding-left: 8.5rem;
-    padding-right: 0;
+  .videos {
+    padding-left: 0;
   }
-}/*# sourceMappingURL=CommentsList.css.map */
+}
+.videos__heading {
+  font-size: 0.75rem;
+  line-height: 1.25rem;
+  color: #afafaf;
+  padding-bottom: 1rem;
+  font-weight: 400;
+}/*# sourceMappingURL=Videos.css.map */

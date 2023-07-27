@@ -1,0 +1,61 @@
+@use "../../styles/partials/colors" as *;
+@use "../../styles/partials/typography" as *;
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
+
+.video {
+  display: flex;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
+
+  @include tablet {
+    padding-right: 28rem;
+  }
+
+  @include desktop {
+    padding-right: 0;
+  }
+
+  &__image {
+    background-image: url(https://i.imgur.com/5qyCZrD.jpg);
+    background-size: cover;
+    height: 20vw;
+    width: 44vw;
+    border-radius: 4px;
+    margin-right: 1rem;
+
+    @include tablet {
+      height: 9vw;
+      width: 23vw;
+    }
+
+    @include desktop {
+      height: 6vw;
+      width: 9vw;
+    }
+  }
+
+  &__container {
+    @include desktop {
+      width: 12vw;
+    }
+  }
+
+  &__title {
+    @include mobile-sub-section-body;
+    padding-bottom: 0.5rem;
+    font-weight: 400;
+
+    @include tablet {
+      @include desktop-tablet-subheader-body;
+    }
+  }
+
+  &__creator {
+    @include mobile-sub-section-body;
+
+    @include tablet {
+      @include desktop-tablet-subheader-body;
+    }
+  }
+}

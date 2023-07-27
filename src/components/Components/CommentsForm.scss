@@ -10,6 +10,12 @@
     padding: 1.5rem 2.25rem 0rem 2.25rem;
   }
 
+  @include desktop {
+    padding-left: 8.5rem;
+    width: 65vw;
+    padding-right: 1rem;
+  }
+
   &__heading {
     @include mobile-sub-section-body;
     padding-bottom: 1rem;
@@ -37,6 +43,12 @@
     @include tablet {
       width: 5.208vw;
       height: 5.208vw;
+    }
+
+    @include desktop {
+      height: 3.125vw;
+      width: 3.125vw;
+      margin-right: 2.25rem;
     }
   }
 
@@ -82,6 +94,11 @@
       margin-right: 1rem;
     }
 
+    @include desktop {
+      width: 33vw;
+      height: 3.125vw;
+    }
+
     &::placeholder {
       color: $brainflix-dark-black;
       @include desktop-tablet-labels;
@@ -111,6 +128,11 @@
       margin-top: 0;
       @include desktop-tablet-labels;
       background-size: 2vw;
+    }
+
+    @include desktop {
+      height: 3.125vw;
+      width: 13vw;
     }
   }
 }

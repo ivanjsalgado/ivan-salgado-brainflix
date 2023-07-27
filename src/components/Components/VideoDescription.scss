@@ -12,6 +12,8 @@
 
   @include desktop {
     padding-left: 8.5rem;
+    padding-right: 0;
+    width: 65vw;
   }
 
   &__header {
@@ -67,6 +69,10 @@
 
   &__container {
     display: flex;
+
+    @include desktop {
+      padding-right: 1rem;
+    }
   }
 
   &__icons {

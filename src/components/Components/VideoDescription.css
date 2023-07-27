@@ -19,6 +19,8 @@
 @media screen and (min-width: 1280px) {
   .description {
     padding-left: 8.5rem;
+    padding-right: 0;
+    width: 65vw;
   }
 }
 .description__header {
@@ -80,6 +82,11 @@
 }
 .description__container {
   display: flex;
+}
+@media screen and (min-width: 1280px) {
+  .description__container {
+    padding-right: 1rem;
+  }
 }
 .description__icons {
   display: flex;
