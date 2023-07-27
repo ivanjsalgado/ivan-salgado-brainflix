@@ -16,6 +16,13 @@
     padding: 1.5rem 2.25rem 0rem 2.25rem;
   }
 }
+@media screen and (min-width: 1280px) {
+  .comments {
+    padding-left: 8.5rem;
+    width: 65vw;
+    padding-right: 1rem;
+  }
+}
 .comments__heading {
   font-size: 0.8125rem;
   line-height: 1.125rem;
@@ -46,6 +53,13 @@
   .comments__avatar {
     width: 5.208vw;
     height: 5.208vw;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .comments__avatar {
+    height: 3.125vw;
+    width: 3.125vw;
+    margin-right: 2.25rem;
   }
 }
 .comments__form {
@@ -92,6 +106,12 @@
     margin-right: 1rem;
   }
 }
+@media screen and (min-width: 1280px) {
+  .comments__comment-area {
+    width: 33vw;
+    height: 3.125vw;
+  }
+}
 .comments__comment-area::-moz-placeholder {
   color: #000000;
   font-size: 0.75rem;
@@ -126,5 +146,11 @@
     font-size: 0.75rem;
     line-height: 1.25rem;
     background-size: 2vw;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .comments__submit {
+    height: 3.125vw;
+    width: 13vw;
   }
 }/*# sourceMappingURL=CommentsForm.css.map */

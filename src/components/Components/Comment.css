@@ -13,6 +13,11 @@
   flex-direction: column;
   border-top: 1px solid #e1e1e1;
 }
+@media screen and (min-width: 1280px) {
+  .comment {
+    padding-right: 1rem;
+  }
+}
 .comment:last-child {
   border-bottom: 1px solid #e1e1e1;
 }
@@ -90,6 +95,7 @@
 }
 @media screen and (min-width: 1280px) {
   .comment__text {
-    font-size: 0.8425rem;
+    font-size: 0.875rem;
+    line-height: 1.375rem;
   }
 }/*# sourceMappingURL=Comment.css.map */
