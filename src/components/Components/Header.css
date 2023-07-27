@@ -114,6 +114,12 @@
   outline: none;
   border: 2px solid #0065ad;
 }
+.header__search::-moz-placeholder {
+  color: #000000;
+}
+.header__search::placeholder {
+  color: #000000;
+}
 .header__upload {
   display: flex;
   width: 90vw;

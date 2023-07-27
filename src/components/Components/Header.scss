@@ -105,6 +105,10 @@
       outline: none;
       border: 2px solid $brainflix-dark-blue;
     }
+
+    &::placeholder {
+      color: $brainflix-dark-black;
+    }
   }
 
   &__upload {
