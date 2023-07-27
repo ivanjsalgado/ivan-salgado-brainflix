@@ -17,7 +17,11 @@ function Comments() {
               placeholder="Add a new comment"
             ></textarea>
           </div>
-          <input class="comments__submit" type="submit" value="COMMENT"></input>
+          <input
+            className="comments__submit"
+            type="submit"
+            value="COMMENT"
+          ></input>
         </form>
       </div>
     </section>

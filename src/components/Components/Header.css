@@ -72,11 +72,6 @@
     align-items: center;
   }
 }
-@media screen and (min-width: 1280px) {
-  .header__form {
-    height: 0;
-  }
-}
 .header__search-container {
   display: flex;
   justify-content: space-between;

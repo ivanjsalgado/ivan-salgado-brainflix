@@ -27,7 +27,7 @@ function Header() {
             />
           </div>
           <label for="file-upload" class="header__upload">
-            <div class="header__upload-img"></div>UPLOAD
+            <div className="header__upload-img"></div>UPLOAD
           </label>
           <input className="header__upload-form" id="file-upload" type="file" />
         </form>

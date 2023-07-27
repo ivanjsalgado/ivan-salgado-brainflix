@@ -63,10 +63,6 @@
       flex-direction: row;
       align-items: center;
     }
-
-    @include desktop {
-      height: 0;
-    }
   }
 
   &__search-container {
