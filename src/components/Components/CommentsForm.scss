@@ -21,6 +21,10 @@
 
   &__container {
     display: flex;
+
+    @include tablet {
+      padding-bottom: 1.5rem;
+    }
   }
 
   &__avatar {
@@ -99,13 +103,14 @@
     background-image: url(../../assets/images/add_comment.svg);
     background-repeat: no-repeat;
     background-position: center left 0.75rem;
-    background-size: 2vw;
+    background-size: 7vw;
 
     @include tablet {
       height: 5.208vw;
       width: 19vw;
       margin-top: 0;
       @include desktop-tablet-labels;
+      background-size: 2vw;
     }
   }
 }

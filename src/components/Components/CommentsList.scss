@@ -1,0 +1,12 @@
+@use "../../styles/partials/colors" as *;
+@use "../../styles/partials/typography" as *;
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
+
+.list {
+  padding: 0rem 1rem 1rem 1rem;
+
+  @include tablet {
+    padding: 0 2.25rem;
+  }
+}

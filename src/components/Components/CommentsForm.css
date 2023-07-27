@@ -30,6 +30,11 @@
 .comments__container {
   display: flex;
 }
+@media screen and (min-width: 768px) {
+  .comments__container {
+    padding-bottom: 1.5rem;
+  }
+}
 .comments__avatar {
   border-radius: 50%;
   margin-top: 1.5rem;
@@ -111,7 +116,7 @@
   background-image: url(../../assets/images/add_comment.svg);
   background-repeat: no-repeat;
   background-position: center left 0.75rem;
-  background-size: 2vw;
+  background-size: 7vw;
 }
 @media screen and (min-width: 768px) {
   .comments__submit {
@@ -120,5 +125,6 @@
     margin-top: 0;
     font-size: 0.75rem;
     line-height: 1.25rem;
+    background-size: 2vw;
   }
 }/*# sourceMappingURL=CommentsForm.css.map */
