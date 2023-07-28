@@ -1,12 +1,12 @@
 import "./Hero.scss";
 
-function Hero() {
+function Hero({ selectedVideo }) {
   return (
     <article className="hero">
       <video
         className="hero__video"
         controls
-        poster="https://i.imgur.com/l2Xfgpl.jpg"
+        poster={selectedVideo.image}
       ></video>
     </article>
   );
