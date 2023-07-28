@@ -1,12 +1,17 @@
 import "./Video.scss";
 
-function Video() {
+function Video({ id, image, title, channel, handleSelectVideo }) {
   return (
     <div className="video">
-      <div className="video__image"></div>
+      <img
+        onClick={() => handleSelectVideo(id)}
+        src={image}
+        className="video__image"
+        alt={title}
+      ></img>
       <div className="video__container">
-        <h2 className="video__title">Become A Travel Pro In One Easy Lesson</h2>
-        <p className="video__creator">Todd Welch</p>
+        <h2 className="video__title">{title}</h2>
+        <p className="video__creator">{channel}</p>
       </div>
     </div>
   );
