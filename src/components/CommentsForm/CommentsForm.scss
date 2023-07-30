@@ -1,0 +1,138 @@
+@use "../../styles/partials/colors" as *;
+@use "../../styles/partials/typography" as *;
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
+
+.comments {
+  padding: 1rem;
+
+  @include tablet {
+    padding: 1.5rem 2.25rem 0rem 2.25rem;
+  }
+
+  @include desktop {
+    padding-left: 8.5rem;
+    width: 65vw;
+    padding-right: 1rem;
+  }
+
+  &__heading {
+    @include mobile-sub-section-body;
+    padding-bottom: 1rem;
+
+    @include tablet {
+      @include desktop-tablet-subheader-body;
+    }
+  }
+
+  &__container {
+    display: flex;
+
+    @include tablet {
+      padding-bottom: 1.5rem;
+    }
+  }
+
+  &__avatar {
+    border-radius: 50%;
+    margin-top: 1.5rem;
+    width: 11.25vw;
+    height: 11.25vw;
+    margin-right: 1rem;
+
+    @include tablet {
+      width: 5.208vw;
+      height: 5.208vw;
+    }
+
+    @include desktop {
+      height: 3.125vw;
+      width: 3.125vw;
+      margin-right: 2.25rem;
+    }
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+
+    @include tablet {
+      flex-direction: row;
+      align-items: flex-end;
+    }
+  }
+
+  &__form-container {
+    @include tablet {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &__name {
+    padding-bottom: 0.25rem;
+    color: $silver;
+    @include mobile-section-header;
+
+    @include tablet {
+      @include desktop-tablet-labels;
+    }
+  }
+
+  &__comment-area {
+    height: 31.563vw;
+    resize: none;
+    padding: 0.75rem;
+    border: 1px solid $mercury;
+    border-radius: 0.25rem;
+    width: 73.75vw;
+
+    @include tablet {
+      height: 5.208vw;
+      width: 62vw;
+      margin-right: 1rem;
+    }
+
+    @include desktop {
+      width: 33vw;
+      height: 3.125vw;
+    }
+
+    &::placeholder {
+      color: $brainflix-dark-black;
+      @include desktop-tablet-labels;
+    }
+
+    &:focus {
+      outline: none;
+      border: 2px solid $brainflix-dark-blue;
+    }
+  }
+
+  &__submit {
+    margin-top: 1rem;
+    height: 12.5vw;
+    border-color: transparent;
+    border-radius: 4px;
+    color: $white;
+    background-color: $brainflix-blue;
+    background-image: url(../../assets/images/add_comment.svg);
+    background-repeat: no-repeat;
+    background-position: center left 0.75rem;
+    background-size: 7vw;
+
+    @include tablet {
+      height: 5.208vw;
+      width: 19vw;
+      margin-top: 0;
+      @include desktop-tablet-labels;
+      background-size: 2vw;
+    }
+
+    @include desktop {
+      height: 3.125vw;
+      width: 13vw;
+    }
+  }
+}

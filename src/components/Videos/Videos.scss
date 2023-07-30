@@ -1,0 +1,25 @@
+@use "../../styles/partials/colors" as *;
+@use "../../styles/partials/typography" as *;
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
+
+.videos {
+  padding-left: 1rem;
+  padding-right: 1rem;
+
+  @include tablet {
+    padding-left: 2.25rem;
+    padding-top: 1.5rem;
+  }
+
+  @include desktop {
+    padding-left: 0;
+  }
+
+  &__heading {
+    @include mobile-section-header;
+    color: $silver;
+    padding-bottom: 1rem;
+    font-weight: 400;
+  }
+}

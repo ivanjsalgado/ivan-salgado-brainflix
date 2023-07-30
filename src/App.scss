@@ -1,0 +1,40 @@
+@use "./styles/partials/colors" as *;
+@use "./styles/partials/typography" as *;
+@use "./styles/partials/variables" as *;
+@use "./styles/partials/mixins" as *;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Avenir";
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+
+  @include desktop {
+    flex-direction: row;
+  }
+
+  &__one {
+    display: flex;
+    flex-direction: column;
+
+    @include desktop {
+      width: 65vw;
+      border-right: 1px solid $mercury;
+    }
+  }
+
+  &__two {
+    display: flex;
+    flex-direction: column;
+
+    @include desktop {
+      margin-left: 1rem;
+      width: 33vw;
+    }
+  }
+}

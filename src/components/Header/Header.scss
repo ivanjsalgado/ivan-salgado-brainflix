@@ -3,18 +3,12 @@
 @use "../../styles/partials/variables" as *;
 @use "../../styles/partials/mixins" as *;
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Avenir";
-}
 .header {
   padding: 1rem;
 
   @include tablet {
     display: flex;
-    padding: 0 2.25rem;
+    padding: 1rem 2.25rem;
     justify-content: space-between;
     align-items: center;
   }
@@ -58,15 +52,10 @@
   &__form {
     display: flex;
     flex-direction: column;
-    height: 11.25vw;
 
     @include tablet {
       flex-direction: row;
       align-items: center;
-    }
-
-    @include desktop {
-      height: 0;
     }
   }
 
@@ -85,6 +74,7 @@
     max-width: 100vw;
     padding: 0.75rem;
     border: 1px solid $mercury;
+    background-color: $alabaster;
     border-radius: 0.25rem;
     text-indent: 1.5rem;
     margin-bottom: 1rem;
@@ -105,6 +95,21 @@
       outline: none;
       border: 2px solid $brainflix-dark-blue;
     }
+
+    &::placeholder {
+      color: $brainflix-dark-black;
+    }
+  }
+
+  &__avatar {
+    border-radius: 50%;
+    height: 11.25vw;
+    width: 11.25vw;
+
+    @include tablet {
+      display: none;
+      height: 5.208vw;
+    }
   }
 
   &__upload {
@@ -118,8 +123,8 @@
     color: $white;
     align-items: center;
     text-indent: 25vw;
-    font-size: 1rem;
-    font-weight: 400;
+    font-size: 0.8125rem;
+    font-weight: 700;
 
     @include tablet {
       height: 5.208vw;
@@ -144,7 +149,7 @@
     @include tablet {
       height: 3vw;
       width: 3vw;
-      margin-right: 1rem;
+      margin-right: 1.5rem;
     }
 
     @include desktop {
@@ -155,17 +160,6 @@
 
   &__upload-form {
     display: none;
-  }
-
-  &__avatar {
-    border-radius: 50%;
-    height: 11.25vw;
-    width: 11.25vw;
-
-    @include tablet {
-      display: none;
-      height: 5.208vw;
-    }
   }
 
   &__avatar-td {

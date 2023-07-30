@@ -1,0 +1,26 @@
+@use "../../styles/partials/colors" as *;
+@use "../../styles/partials/typography" as *;
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
+
+.hero {
+  display: flex;
+  background-color: $brainflix-dark-black;
+  justify-content: center;
+
+  &__video {
+    width: 100vw;
+    height: 56.25vw;
+    object-fit: fill;
+
+    @include tablet {
+      height: 50.625vw;
+      width: 90vw;
+    }
+
+    @include desktop {
+      width: 65vw;
+      height: 36.5625vw;
+    }
+  }
+}
