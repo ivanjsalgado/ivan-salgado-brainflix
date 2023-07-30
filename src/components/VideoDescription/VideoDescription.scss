@@ -89,12 +89,17 @@
   &__view-icon {
     margin-bottom: 1rem;
     margin-right: 0.5rem;
-    height: 1.125rem;
-    width: 1.125rem;
+    height: 5.625vw;
+    width: 5.625vw;
 
     @include tablet {
-      height: 1.375rem;
-      width: 1.375rem;
+      height: 2.865vw;
+      width: 2.865vw;
+    }
+
+    @include desktop {
+      height: 1.719vw;
+      width: 1.719vw;
     }
   }
 
@@ -113,8 +118,8 @@
   &__like-icon {
     margin-bottom: 1rem;
     margin-right: 0.5rem;
-    height: 1.125rem;
-    width: 1.125rem;
+    height: 5.625vw;
+    width: 5.625vw;
 
     @include tablet {
       display: none;
@@ -147,8 +152,13 @@
       display: block;
       margin-bottom: 1rem;
       margin-right: 0.5rem;
-      height: 1.375rem;
-      width: 1.375rem;
+      height: 2.865vw;
+      width: 2.865vw;
+    }
+
+    @include desktop {
+      height: 1.719vw;
+      width: 1.719vw;
     }
   }
   &__like {

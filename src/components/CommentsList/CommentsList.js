@@ -1,5 +1,5 @@
 import "./CommentsList.scss";
-import Comment from "./Comment";
+import Comment from "../Comment/Comment";
 
 function CommentsList({ selectedVideo }) {
   const comments = selectedVideo.comments;

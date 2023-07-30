@@ -1,4 +1,4 @@
-import Video from "./Video";
+import Video from "../Video/Video";
 import "./Videos.scss";
 
 function Videos({ filteredVideos, handleSelectVideo, selectedVideo }) {

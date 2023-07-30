@@ -1,11 +1,12 @@
 import "./App.scss";
-import CommentsForm from "./components/Components/CommentsForm";
-import Header from "./components/Components/Header";
-import Hero from "./components/Components/Hero";
-import VideoDescription from "./components/Components/VideoDescription";
-import CommentsList from "./components/Components/CommentsList";
-import Videos from "./components/Components/Videos";
+import CommentsForm from "./components/CommentsForm/CommentsForm";
+import Header from "./components/Header/Header";
+import Hero from "./components/Hero/Hero";
+import VideoDescription from "./components/VideoDescription/VideoDescription";
+import CommentsList from "./components/CommentsList/CommentsList";
+import Videos from "./components/Videos/Videos";
 import videoDetails from "./data/video-details.json";
+import videos from "./data/videos.json";
 import { useState } from "react";
 
 function App() {
@@ -18,7 +19,7 @@ function App() {
     setSelectedVideo(foundVideo);
   }
 
-  const filteredVideos = videoDetails.filter((video) => {
+  const filteredVideos = videos.filter((video) => {
     return video.id !== selectedVideo.id;
   });
 

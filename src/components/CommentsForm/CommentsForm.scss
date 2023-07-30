@@ -73,7 +73,7 @@
   &__name {
     padding-bottom: 0.25rem;
     color: $silver;
-    @include mobile-sub-section-body;
+    @include mobile-section-header;
 
     @include tablet {
       @include desktop-tablet-labels;

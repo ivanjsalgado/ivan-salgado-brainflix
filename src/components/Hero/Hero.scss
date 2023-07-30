@@ -11,6 +11,7 @@
   &__video {
     width: 100vw;
     height: 56.25vw;
+    object-fit: fill;
 
     @include tablet {
       height: 50.625vw;
@@ -19,7 +20,7 @@
 
     @include desktop {
       width: 65vw;
-      height: unset;
+      height: 36.5625vw;
     }
   }
 }
