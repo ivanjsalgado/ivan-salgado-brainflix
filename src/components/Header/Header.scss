@@ -3,12 +3,6 @@
 @use "../../styles/partials/variables" as *;
 @use "../../styles/partials/mixins" as *;
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Avenir";
-}
 .header {
   padding: 1rem;
 
@@ -107,6 +101,17 @@
     }
   }
 
+  &__avatar {
+    border-radius: 50%;
+    height: 11.25vw;
+    width: 11.25vw;
+
+    @include tablet {
+      display: none;
+      height: 5.208vw;
+    }
+  }
+
   &__upload {
     display: flex;
     width: 90vw;
@@ -118,8 +123,8 @@
     color: $white;
     align-items: center;
     text-indent: 25vw;
-    font-size: 1rem;
-    font-weight: 400;
+    font-size: 0.8125rem;
+    font-weight: 700;
 
     @include tablet {
       height: 5.208vw;
@@ -144,7 +149,7 @@
     @include tablet {
       height: 3vw;
       width: 3vw;
-      margin-right: 1rem;
+      margin-right: 1.5rem;
     }
 
     @include desktop {
@@ -155,17 +160,6 @@
 
   &__upload-form {
     display: none;
-  }
-
-  &__avatar {
-    border-radius: 50%;
-    height: 11.25vw;
-    width: 11.25vw;
-
-    @include tablet {
-      display: none;
-      height: 5.208vw;
-    }
   }
 
   &__avatar-td {

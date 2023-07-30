@@ -5,28 +5,19 @@
 
 .video {
   display: flex;
-  padding-right: 1rem;
   padding-bottom: 1rem;
-
-  @include tablet {
-    padding-right: 28rem;
-  }
-
-  @include desktop {
-    padding-right: 0;
-  }
 
   &__image {
     background-image: url(https://i.imgur.com/5qyCZrD.jpg);
     background-size: cover;
     height: 20vw;
-    width: 44vw;
+    width: 32vw;
     border-radius: 4px;
     margin-right: 1rem;
 
     @include tablet {
       height: 9vw;
-      width: 23vw;
+      width: 16vw;
     }
 
     @include desktop {
@@ -36,6 +27,10 @@
   }
 
   &__container {
+    width: 53vw;
+    @include tablet {
+      width: 23vw;
+    }
     @include desktop {
       width: 12vw;
     }
@@ -44,7 +39,7 @@
   &__title {
     @include mobile-sub-section-body;
     padding-bottom: 0.5rem;
-    font-weight: 400;
+    font-weight: 700;
 
     @include tablet {
       @include desktop-tablet-subheader-body;
