@@ -76,15 +76,6 @@
     }
   }
 
-  &__form {
-    display: flex;
-    flex-direction: column;
-
-    @include desktop {
-      height: 100%;
-    }
-  }
-
   &__form-container {
     display: flex;
     flex-direction: column;
@@ -98,6 +89,15 @@
       padding-top: 1.5rem;
       padding-bottom: 1.5rem;
       width: 100vw;
+    }
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+
+    @include desktop {
+      height: 100%;
     }
   }
 
@@ -174,20 +174,19 @@
     }
   }
 
-  &__submit-container {
+  &__buttons {
     display: flex;
     flex-direction: column;
+    justify-content: center;
 
     @include tablet {
-      flex-direction: row;
-      border-top: 1px solid $mercury;
       justify-content: flex-end;
       align-items: flex-end;
+      flex-direction: row;
     }
 
     @include desktop {
-      align-items: center;
-      padding-top: 1rem;
+      align-items: normal;
     }
   }
 
@@ -202,6 +201,7 @@
     background-position: center left 0.75rem;
     background-size: 7vw;
     font-weight: 700;
+    width: 90vw;
 
     @include tablet {
       display: none;
@@ -231,21 +231,6 @@
         margin-left: 1rem;
         margin-top: 0;
       }
-    }
-  }
-  &__buttons {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-    @include tablet {
-      justify-content: flex-end;
-      align-items: flex-end;
-      flex-direction: row;
-    }
-
-    @include desktop {
-      align-items: normal;
     }
   }
 

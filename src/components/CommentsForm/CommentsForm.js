@@ -1,12 +1,10 @@
 import "./CommentsForm.scss";
 import Avatar from "../../assets/images/Mohan-muruge.jpg";
 
-function Comments({ selectedVideo }) {
+function Comments({ numOfComments }) {
   return (
     <section className="comments">
-      <h2 className="comments__heading">
-        {selectedVideo.comments.length} Comments
-      </h2>
+      <h2 className="comments__heading">{numOfComments} Comments</h2>
       <div className="comments__container">
         <img className="comments__avatar" src={Avatar} alt="Avatar Icon" />
         <form className="comments__form">

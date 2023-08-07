@@ -1,13 +1,9 @@
 import "./Hero.scss";
 
-function Hero({ selectedVideo }) {
+function Hero({ image }) {
   return (
     <article className="hero">
-      <video
-        className="hero__video"
-        controls
-        poster={selectedVideo.image}
-      ></video>
+      <video className="hero__video" controls poster={image}></video>
     </article>
   );
 }

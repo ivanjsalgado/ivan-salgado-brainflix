@@ -1,7 +1,11 @@
 import BikeImage from "../../assets/images/Upload-video-preview.jpg";
 import "./VideoUpload.scss";
+import { Link } from "react-router-dom";
 
 function VideoUpload() {
+  const handleSubmit = () => {
+    alert("Information provided has been uploaded");
+  };
   return (
     <div className="upload">
       <h2 className="upload__heading">Upload Video</h2>
@@ -13,28 +17,36 @@ function VideoUpload() {
         <div className="upload__form-container">
           <form className="upload__form">
             <label className="upload__name">TITLE YOUR VIDEO</label>
-            <textarea
+            <input
               className="upload__comment-area"
               name="upload-area"
-              id="upload-area"
+              id="title"
               placeholder="Add a title to your video"
-            ></textarea>
+            ></input>
             <label className="upload__description">
               ADD A VIDEO DESCRIPTION
             </label>
             <textarea
               className="upload__description-area"
               name="upload-description"
-              id="upload-description"
+              id="description"
               placeholder="Add a description to your video"
             ></textarea>
           </form>
         </div>
       </div>
       <div className="upload__buttons">
-        <button className="upload__submit">PUBLISH</button>
+        <Link to={"/"}>
+          <button onClick={handleSubmit} className="upload__submit">
+            PUBLISH
+          </button>
+        </Link>
         <button className="upload__button">CANCEL</button>
-        <button className="upload__submit--hide">PUBLISH</button>
+        <Link to={"/"}>
+          <button onClick={handleSubmit} className="upload__submit--hide">
+            PUBLISH
+          </button>
+        </Link>
       </div>
     </div>
   );
