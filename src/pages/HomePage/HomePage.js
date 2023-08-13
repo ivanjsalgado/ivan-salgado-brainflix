@@ -27,9 +27,7 @@ function HomePage() {
 
   useEffect(() => {
     axios
-      .get(
-        `https://project-2-api.herokuapp.com/videos/?api_key=<793959eb-657f-41d1-9306-41e8f402d315>`
-      )
+      .get("http://localhost:8080/videos")
       .then((response) => {
         setVideos(response.data);
         setSelectedVideo(response.data[0]);
@@ -42,11 +40,7 @@ function HomePage() {
 
   const findVideoDetails = (id) => {
     axios
-      .get(
-        `https://project-2-api.herokuapp.com/videos/` +
-          id +
-          `?api_key=<793959eb-657f-41d1-9306-41e8f402d315>`
-      )
+      .get(`http://localhost:8080/videos/${id}`)
       .then((response) => {
         setVideoDetails(response.data);
       })
