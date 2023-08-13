@@ -1,14 +1,38 @@
+import { useState } from "react";
 import BikeImage from "../../assets/images/Upload-video-preview.jpg";
 import "./VideoUpload.scss";
 import { Link } from "react-router-dom";
+import axios from "axios";
 
 function VideoUpload() {
+  const [title, setTitle] = useState();
+  const [description, setDescription] = useState();
+
   const handleSubmit = () => {
+    const newVideo = {
+      title: title,
+      description: description,
+    };
+    axios
+      .post("http://localhost:8080/videos", newVideo)
+      .then()
+      .catch((err) => {
+        console.log(err);
+      });
     alert("Information provided has been uploaded");
   };
+
+  const handleTitle = (event) => {
+    setTitle(event.target.value);
+  };
+
+  const handleDescription = (event) => {
+    setDescription(event.target.value);
+  };
+
   return (
-    <div className="upload">
-      <h2 className="upload__heading">Upload Video</h2>
+    <section className="upload">
+      <h1 className="upload__heading">Upload Video</h1>
       <div className="upload__container">
         <div className="upload__thumb-container">
           <p className="upload__thumb">VIDEO THUMBNAIL</p>
@@ -18,19 +42,19 @@ function VideoUpload() {
           <form className="upload__form">
             <label className="upload__name">TITLE YOUR VIDEO</label>
             <input
+              onChange={handleTitle}
               className="upload__comment-area"
-              name="upload-area"
-              id="title"
               placeholder="Add a title to your video"
+              value={title}
             ></input>
             <label className="upload__description">
               ADD A VIDEO DESCRIPTION
             </label>
             <textarea
+              onChange={handleDescription}
               className="upload__description-area"
-              name="upload-description"
-              id="description"
               placeholder="Add a description to your video"
+              value={description}
             ></textarea>
           </form>
         </div>
@@ -42,13 +66,13 @@ function VideoUpload() {
           </button>
         </Link>
         <button className="upload__button">CANCEL</button>
-        <Link to={"/"}>
+        <Link style={{ textDecoration: "none" }} to={"/"}>
           <button onClick={handleSubmit} className="upload__submit--hide">
             PUBLISH
           </button>
         </Link>
       </div>
-    </div>
+    </section>
   );
 }
 
