@@ -14,7 +14,11 @@ function VideoUpload() {
       description: description,
     };
     axios
-      .post("http://localhost:8080/videos", newVideo)
+      // .post("http://localhost:8080/videos", newVideo)
+      .post(
+        "https://ivanjsalgado-brain-flix-e8411a027468.herokuapp.com/videos",
+        newVideo
+      )
       .then()
       .catch((err) => {
         console.log(err);
