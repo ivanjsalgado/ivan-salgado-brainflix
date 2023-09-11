@@ -27,7 +27,8 @@ function HomePage() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:8080/videos")
+      // .get("http://localhost:8080/videos")
+      .get("https://ivanjsalgado-brain-flix-e8411a027468.herokuapp.com/videos")
       .then((response) => {
         setVideos(response.data);
         setSelectedVideo(response.data[0]);
@@ -40,7 +41,10 @@ function HomePage() {
 
   const findVideoDetails = (id) => {
     axios
-      .get(`http://localhost:8080/videos/${id}`)
+      // .get(`http://localhost:8080/videos/${id}`)
+      .get(
+        `https://ivanjsalgado-brain-flix-e8411a027468.herokuapp.com/videos/${id}`
+      )
       .then((response) => {
         setVideoDetails(response.data);
       })
